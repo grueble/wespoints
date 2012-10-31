@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Points Calculator</title>
+    <link href='style.css' rel='stylesheet' type='text/css' />
+    <script src='lib/jquery-1.6.4.min.js' type='text/javascript'></script>
+    <script src='lib/underscore.js' type='text/javascript'></script>
+    <script src='calc.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div id='container'>
+      <h1>Points Calculator</h1>
+      <h2>Fall 2012</h2>
+      <p><span id="date">--</span></p>
+      <p><span id="days-left">--</span> days left  <span id="info-target">(?)</span></p>
+      <div id='info'>
+        <h3 id='info-title'>Calculation Info</h3>
+        <div id='content'>Information about how the number of days left is calculated</div>
+        <div id='info-arrow-border'></div>
+        <div id='info-arrow'></div>
+      </div>
+      <a href='https://onecard.wesleyan.edu/webapps/portal/frameset.jsp?tab_id=_35_1' id='balance' target='_blank'>Check current balance</a>
+      <p id='help-text'>Click your meal plan to begin</p>
+      <table id='plans'>
+        <thead>
+          <tr>
+            <th class='results'></th>
+            <th>Meals</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='primary newSection results' id='left'>
+            <td class='title'>Left</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='error error-m-p'>Neither is a valid number, you jerk!</span>
+              <span class='error error-m'>That isn't a vaild number of meals</span>
+              <span class='error error-p'>That isn't a valid number of points</span>
+              <span class='ideal ideal-m'>Ideally, you'd have <span class="ideal-num"></span> meals left</span>
+              <span class='ideal ideal-p'>Ideally, you'd have <span class="ideal-num"></span> points left</span>
+            </td>
+            <td id='back-cell'>
+              <input id='back' type='submit' value='back' />
+            </td>
+          </tr>
+          <tr class='secondary results' id='left-pd'>
+            <td class='title'>per day</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='error'></span>
+              <span class='ideal ideal-m'>Ideally, you'd have <span class="ideal-num"></span> meals left per day</span>
+              <span class='ideal ideal-p'>Ideally, you'd have <span class="ideal-num"></span> points left per day</span>
+            </td>
+          </tr>
+          <tr class='secondary results' id='left-pw'>
+            <td class='title'>per week</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='error'></span>
+              <span class='ideal ideal-m'>Ideally, you'd have <span class="ideal-num"></span> meals left per week</span>
+              <span class='ideal ideal-p'>Ideally, you'd have <span class="ideal-num"></span> points left per week</span>
+            </td>
+          </tr>
+          <tr class='secondary newSection results' id='used'>
+            <td class='title'>Used</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='error'></span>
+              <span class='ideal ideal-m'>Ideally, you'd have used <span class="ideal-num"></span> meals</span>
+              <span class='ideal ideal-p'>Ideally, you'd have used <span class="ideal-num"></span> points</span>
+            </td>
+          </tr>
+          <tr class='secondary results' id='used-pd'>
+            <td class='title'>per day</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='ideal ideal-m'>Ideally, you'd have used <span class="ideal-num"></span> meals per day</span>
+              <span class='ideal ideal-p'>Ideally, you'd have used <span class="ideal-num"></span> points per day</span>
+            </td>
+          </tr>
+          <tr class='secondary results' id='used-pw'>
+            <td class='title'>per week</td>
+            <td class='m'>
+              <input type='text' />
+            </td>
+            <td class='p'>
+              <input type='text' />
+            </td>
+            <td class='extra'>
+              <span class='error'></span>
+              <span class='ideal ideal-m'>Ideally, you'd have used <span class="ideal-num"></span> meals per week</span>
+              <span class='ideal ideal-p'>Ideally, you'd have used <span class="ideal-num"></span> points per week</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
