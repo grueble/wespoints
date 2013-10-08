@@ -4,20 +4,21 @@ default_input_txt = "--"
 # semesters
 
 plans = [
-  [ 0,   1582 ],
-  [ 105, 723  ],
-  [ 135, 508  ],
-  [ 165, 293  ],
-  [ 210, 107  ],
-  [ 285, 53   ]
+  [ 0,   1629 ],
+  [ 50,  1225 ],
+  [ 105, 745  ],
+  [ 135, 523  ],
+  [ 165, 302  ],
+  [ 210, 110  ],
+  [ 285, 55   ]
 ]
 
 dates =
-  start: "Sep 1, 2012"
-  end: "Dec 16, 2012"
+  start: "Sep 2, 2013"
+  end: "Dec 14, 2012"
   breaks:
-    "Fall": [ "Oct 12, 2012", "Oct 17, 2012" ],
-    "Thanksgiving": [ "Nov 20, 2012", "Nov 26, 2012" ],
+    "Fall": [ "Oct 18, 2012", "Oct 23, 2012" ],
+    "Thanksgiving": [ "Nov 26, 2012", "Dec 2, 2012" ],
 
 american_date = (s, sep) ->
   sep = sep || "-"
